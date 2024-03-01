@@ -191,3 +191,186 @@ else:
 end_time = time.perf_counter_ns()
 execution_time = end_time - start_time
 print("\tTime: ", execution_time)
+
+print("\nFibonacci search:")
+# Fibonacci search со списком из 10 элементов
+print("Short list:")
+start_time = time.perf_counter_ns()
+res = fibonacci_search(short_list, 7)
+if res == -1:
+    print("\tElement not found")
+else:
+    print("\tElement found at index: ", res)
+end_time = time.perf_counter_ns()
+execution_time = end_time - start_time
+print("\tTime: ", execution_time)
+
+# Fibonacci search со списком из 10_000 элементов
+print("Long list:")
+start_time = time.perf_counter_ns()
+res = fibonacci_search(long_list, 777)
+if res == -1:
+    print("\tElement not found")
+else:
+    print("\tElement found at index: ", res)
+end_time = time.perf_counter_ns()
+execution_time = end_time - start_time
+print("\tTime: ", execution_time)
+
+# Fibonacci search со списком из 10_000_000 элементов
+print("Super long list:")
+start_time = time.perf_counter_ns()
+res = fibonacci_search(big_long_list, 777777)
+if res == -1:
+    print("\tElement not found")
+else:
+    print("\tElement found at index: ", res)
+end_time = time.perf_counter_ns()
+execution_time = end_time - start_time
+print("\tTime: ", execution_time)
+
+# Fibonacci search со списком из 10_000 элементов с повторениями
+print("Duplicated list:")
+start_time = time.perf_counter_ns()
+res = fibonacci_search(duplicated_list, 777)
+if res == -1:
+    print("\tElement not found")
+else:
+    print("\tElement found at index: ", res)
+end_time = time.perf_counter_ns()
+execution_time = end_time - start_time
+print("\tTime: ", execution_time)
+
+# Fibonacci search с неотсортированным списком из 10_000 элементов с повторениями
+print("Unsorted duplicated list:")
+start_time = time.perf_counter_ns()
+res = fibonacci_search(unsorted_list, 777)
+if res == -1:
+    print("\tElement not found")
+else:
+    print("\tElement found at index: ", res)
+end_time = time.perf_counter_ns()
+execution_time = end_time - start_time
+print("\tTime: ", execution_time)
+
+print("\nExponential search:")
+# Exponential search со списком из 10 элементов
+print("Short list:")
+start_time = time.perf_counter_ns()
+res = exponential_search(short_list, 7)
+if res == -1:
+    print("\tElement not found")
+else:
+    print("\tElement found at index: ", res)
+end_time = time.perf_counter_ns()
+execution_time = end_time - start_time
+print("\tTime: ", execution_time)
+
+# Exponential search со списком из 10_000 элементов
+print("Long list:")
+start_time = time.perf_counter_ns()
+res = exponential_search(long_list, 777)
+if res == -1:
+    print("\tElement not found")
+else:
+    print("\tElement found at index: ", res)
+end_time = time.perf_counter_ns()
+execution_time = end_time - start_time
+print("\tTime: ", execution_time)
+
+# Exponential search со списком из 10_000_000 элементов
+print("Super long list:")
+start_time = time.perf_counter_ns()
+res = exponential_search(big_long_list, 777777)
+if res == -1:
+    print("\tElement not found")
+else:
+    print("\tElement found at index: ", res)
+end_time = time.perf_counter_ns()
+execution_time = end_time - start_time
+print("\tTime: ", execution_time)
+
+# Exponential search со списком из 10_000 элементов с повторениями
+print("Duplicated list:")
+start_time = time.perf_counter_ns()
+res = exponential_search(duplicated_list, 777)
+if res == -1:
+    print("\tElement not found")
+else:
+    print("\tElement found at index: ", res)
+end_time = time.perf_counter_ns()
+execution_time = end_time - start_time
+print("\tTime: ", execution_time)
+
+# Exponential search с неотсортированным списком из 10_000 элементов с повторениями
+print("Unsorted duplicated list:")
+start_time = time.perf_counter_ns()
+res = exponential_search(unsorted_list, 777)
+if res == -1:
+    print("\tElement not found")
+else:
+    print("\tElement found at index: ", res)
+end_time = time.perf_counter_ns()
+execution_time = end_time - start_time
+print("\tTime: ", execution_time)
+
+print("\nInterpolation search:")
+# Interpolation search со списком из 10 элементов
+print("Short list:")
+start_time = time.perf_counter_ns()
+res = interpolation_search(short_list, 7)
+if res == -1:
+    print("\tElement not found")
+else:
+    print("\tElement found at index: ", res)
+end_time = time.perf_counter_ns()
+execution_time = end_time - start_time
+print("\tTime: ", execution_time)
+
+# Interpolation search со списком из 10_000 элементов
+print("Long list:")
+start_time = time.perf_counter_ns()
+res = interpolation_search(long_list, 777)
+if res == -1:
+    print("\tElement not found")
+else:
+    print("\tElement found at index: ", res)
+end_time = time.perf_counter_ns()
+execution_time = end_time - start_time
+print("\tTime: ", execution_time)
+
+# Interpolation search со списком из 10_000_000 элементов
+print("Super long list:")
+start_time = time.perf_counter_ns()
+res = interpolation_search(big_long_list, 777777)
+if res == -1:
+    print("\tElement not found")
+else:
+    print("\tElement found at index: ", res)
+end_time = time.perf_counter_ns()
+execution_time = end_time - start_time
+print("\tTime: ", execution_time)
+
+# Interpolation search со списком из 10_000 элементов с повторениями
+print("Duplicated list:")
+start_time = time.perf_counter_ns()
+res = interpolation_search(duplicated_list, 777)
+if res == -1:
+    print("\tElement not found")
+else:
+    print("\tElement found at index: ", res)
+end_time = time.perf_counter_ns()
+execution_time = end_time - start_time
+print("\tTime: ", execution_time)
+
+# Interpolation search с неотсортированным списком из 10_000 элементов с повторениями
+print("Unsorted duplicated list:")
+start_time = time.perf_counter_ns()
+res = interpolation_search(unsorted_list, 777)
+if res == -1:
+    print("\tElement not found")
+else:
+    print("\tElement found at index: ", res)
+end_time = time.perf_counter_ns()
+execution_time = end_time - start_time
+print("\tTime: ", execution_time)
